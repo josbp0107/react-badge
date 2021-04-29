@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/**
+ * Esta es la forma de crear elementos y pasarle texto sin utilizar React
+ */
+// const element = document.createElement('h1')
+// element.innerText = 'Hello without React';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// const container = document.getElementById('app');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// container.appendChild(element);
+
+/**
+ * Forma con React
+ */
+
+import React from 'react'; // sera el analogo a createElement()
+import ReactDOM from 'react-dom'; // Sera el analogo a appendChild()
+
+const element = <h1>Hello with React app</h1>;
+const container = document.getElementById('app');
+
+ReactDOM.render(element, container); // Toma dos argumentos, que queremos renderizar y el segundo es donde lo queremos renderizar
