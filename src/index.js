@@ -1,6 +1,10 @@
 import React from 'react'; // sera el analogo a createElement()
 import ReactDOM from 'react-dom'; // Sera el analogo a appendChild()
-import Badge from './components/Badge'
+import 'bootstrap/dist/css/bootstrap.css'; // importar bootstrap
+
+
+import './global.css'; // importar archivo css
+import Badge from './components/Badge'; // Para importar un componente
 
 
 
