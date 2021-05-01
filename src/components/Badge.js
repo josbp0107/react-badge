@@ -8,18 +8,19 @@ class Badge extends React.Component {
             // Es importante saber que, las clases en jsx cambia su nombre a className
             <div className="Badge">
                 <div className="Badge__header">
-                    <h1>TechConf</h1>
-                     
+                    <h1>TechConf</h1>  
                 </div>
 
                 <div className="Badge__section-name">
-                    <img className="Badge__avatar" src="https://www.gravatar.com/avatar?d=identicon" alt="Avatar" />
+                    <img className="Badge__avatar" 
+                    src="https://www.gravatar.com/avatar?d=identicon" 
+                    alt="Avatar" />
                     <h1>Jose David <br/> Ballesteros</h1>
                 </div>
 
                 <div className="Badge__section-info">
-                    <p>Software Engineer</p>
-                    <p>@jose0107</p>
+                    <h3>Software Engineer</h3>
+                    <div>@jose0107</div>
                 </div>
 
                 <div className="Badge__footer">
