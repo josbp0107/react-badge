@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css'; // importar bootstrap
 
 
 import './global.css'; // importar archivo css
-import Badge from './components/Badge'; // Para importar un componente
+import BadgeNew from './pages/BadgeNew'; // Para importar un componente
 
 
 
 const container = document.getElementById('app');
 
 
-ReactDOM.render(<Badge/>, container);
+ReactDOM.render(<BadgeNew/>, container);
