@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Badge from '../components/Badge';
+import BadgeForm from '../components/BadgeForm';
 import Navbar from '../components/Navbar';
 
 class BadgeNew extends React.Component {
@@ -10,7 +11,7 @@ class BadgeNew extends React.Component {
                 <Navbar />
                 <div className="container">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-6">
                             <Badge 
                                 firstName="Jose David"
                                 lastName="Ballesteros" 
@@ -19,6 +20,11 @@ class BadgeNew extends React.Component {
                                 avatar="https://www.gravatar.com/avatar?d=identicon"
                             />
                         </div>
+                        
+                        <div className="col-6">
+                            <BadgeForm />
+                        </div>
+
                     </div>
                 </div>
             </div>
